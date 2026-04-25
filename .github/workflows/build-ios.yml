@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: uv sync
       - name: Build IPA
-        run: uv run flet build ipa --no-codesign --project "Training Tracker" --org com.training.tracker
+        run: uv run flet build ipa --project "Training Tracker" --org com.training.tracker
       - uses: actions/upload-artifact@v4
         with:
           name: training-tracker-ipa
